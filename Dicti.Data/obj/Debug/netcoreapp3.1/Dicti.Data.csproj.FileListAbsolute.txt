@@ -1,0 +1,10 @@
+C:\Repos\Dicti\Dicti.Data\bin\Debug\netcoreapp3.1\Dicti.Data.deps.json
+C:\Repos\Dicti\Dicti.Data\bin\Debug\netcoreapp3.1\Dicti.Data.dll
+C:\Repos\Dicti\Dicti.Data\obj\Debug\netcoreapp3.1\Dicti.Data.AssemblyInfoInputs.cache
+C:\Repos\Dicti\Dicti.Data\obj\Debug\netcoreapp3.1\Dicti.Data.AssemblyInfo.cs
+C:\Repos\Dicti\Dicti.Data\obj\Debug\netcoreapp3.1\Dicti.Data.csprojAssemblyReference.cache
+C:\Repos\Dicti\Dicti.Data\bin\Debug\netcoreapp3.1\Dicti.Data.runtimeconfig.json
+C:\Repos\Dicti\Dicti.Data\bin\Debug\netcoreapp3.1\Dicti.Data.runtimeconfig.dev.json
+C:\Repos\Dicti\Dicti.Data\bin\Debug\netcoreapp3.1\Dicti.Data.pdb
+C:\Repos\Dicti\Dicti.Data\obj\Debug\netcoreapp3.1\Dicti.Data.dll
+C:\Repos\Dicti\Dicti.Data\obj\Debug\netcoreapp3.1\Dicti.Data.pdb
