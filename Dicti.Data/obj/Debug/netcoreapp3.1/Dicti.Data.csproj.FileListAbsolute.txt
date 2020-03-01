@@ -8,3 +8,13 @@ C:\Repos\Dicti\Dicti.Data\bin\Debug\netcoreapp3.1\Dicti.Data.runtimeconfig.dev.j
 C:\Repos\Dicti\Dicti.Data\bin\Debug\netcoreapp3.1\Dicti.Data.pdb
 C:\Repos\Dicti\Dicti.Data\obj\Debug\netcoreapp3.1\Dicti.Data.dll
 C:\Repos\Dicti\Dicti.Data\obj\Debug\netcoreapp3.1\Dicti.Data.pdb
+C:\Users\Martinsita\Desktop\dicti\Dicti.Data\bin\Debug\netcoreapp3.1\Dicti.Data.deps.json
+C:\Users\Martinsita\Desktop\dicti\Dicti.Data\bin\Debug\netcoreapp3.1\Dicti.Data.runtimeconfig.json
+C:\Users\Martinsita\Desktop\dicti\Dicti.Data\bin\Debug\netcoreapp3.1\Dicti.Data.runtimeconfig.dev.json
+C:\Users\Martinsita\Desktop\dicti\Dicti.Data\bin\Debug\netcoreapp3.1\Dicti.Data.dll
+C:\Users\Martinsita\Desktop\dicti\Dicti.Data\bin\Debug\netcoreapp3.1\Dicti.Data.pdb
+C:\Users\Martinsita\Desktop\dicti\Dicti.Data\obj\Debug\netcoreapp3.1\Dicti.Data.csprojAssemblyReference.cache
+C:\Users\Martinsita\Desktop\dicti\Dicti.Data\obj\Debug\netcoreapp3.1\Dicti.Data.AssemblyInfoInputs.cache
+C:\Users\Martinsita\Desktop\dicti\Dicti.Data\obj\Debug\netcoreapp3.1\Dicti.Data.AssemblyInfo.cs
+C:\Users\Martinsita\Desktop\dicti\Dicti.Data\obj\Debug\netcoreapp3.1\Dicti.Data.dll
+C:\Users\Martinsita\Desktop\dicti\Dicti.Data\obj\Debug\netcoreapp3.1\Dicti.Data.pdb

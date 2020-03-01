@@ -1,67 +1,69 @@
 import React, { Component } from 'react';
+import RestServices from '../RestServices/restService';
 
 export class TranslationsData extends Component {
-  static displayName = TranslationsData.name;
 
-  constructor(props) {
-    super(props);
-    this.state = { translations: [], loading: true };
-  }
+	constructor(props) {
+		super(props);
+		this.state = {
+			translations: [],
+			loading: true
+		};
+	}
 
-  componentDidMount() {
-    this.populateTranslationsData();
-  }
+	componentDidMount() {
+		this.populateTranslationsData();
+	}
 
-  static renderTranslationsTable(response) {
-    return (
-      <table className='table table-striped' aria-labelledby="tabelLabel">
-        <thead>
-          <tr>
-            <th>From</th>
-            <th>Translation</th>
-            <th>To</th>
-            <th>Translation</th>
-          </tr>
-        </thead>
-        <tbody>
-          {response.data.map(translation => {
-            return (
+	renderTranslationsTable() {
+		return (
+			<table className='table table-striped' aria-labelledby="tabelLabel">
+				<thead>
+					<tr>
+						<th>From</th>
+						<th>Translation</th>
+						<th>To</th>
+						<th>Translation</th>
+					</tr>
+				</thead>
+				<tbody>
+					{this.state.translations && this.state.translations.map(translation =>
+						<tr key={translation.id}>
+							{translation.transalationValues.map(transalationValue =>
+								<React.Fragment key={transalationValue.id}>
+									<td>{transalationValue.language.language}</td>
+									<td>{transalationValue.text}</td>
+								</React.Fragment>
+							)}
+						</tr>
+					)}
+				</tbody>
+			</table>
+		);
+	}
 
-              <tr key={translation.id}>
-                {translation.transalationValues.map(transalationValue => {
-                  return (
-                    <React.Fragment>
-                      <td>{transalationValue.language.language}</td>
-                      <td>{transalationValue.text}</td>
-                    </React.Fragment>
-                  );
-                })}
+	render() {
+		let contents = this.state.loading
+			? <p><em>Loading...</em></p>
+			: this.renderTranslationsTable();
 
-              </tr>);
-          })
-          }
-        </tbody>
-      </table>
-    );
-  }
+		return (
+			<div>
+				<h1 id="tabelLabel" >Translations</h1>
+				<p>The list of all translations</p>
+				{contents}
+			</div>
+		);
+	}
 
-  render() {
-    let contents = this.state.loading
-      ? <p><em>Loading...</em></p>
-      : TranslationsData.renderTranslationsTable(this.state.translations);
+	populateTranslationsData() {
 
-    return (
-      <div>
-        <h1 id="tabelLabel" >Translations</h1>
-        <p>The list of all translations</p>
-        {contents}
-      </div>
-    );
-  }
-
-  async populateTranslationsData() {
-    const response = await fetch('translations');
-    const data = await response.json();
-    this.setState({ translations: data, loading: false });
-  }
+		RestServices.get("/translations")
+			.then((translationsData) => {
+				this.setState({ translations: translationsData.data.data, loading: false })
+			})
+			.catch((error) => {
+				console.log(error)
+			})
+	}
 }

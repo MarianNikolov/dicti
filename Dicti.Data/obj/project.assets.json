@@ -6798,23 +6798,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MartyMarian\\.nuget\\packages\\": {},
+    "C:\\Users\\Martinsita\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Repos\\Dicti\\Dicti.Data\\Dicti.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Martinsita\\Desktop\\dicti\\Dicti.Data\\Dicti.Data.csproj",
       "projectName": "Dicti.Data",
-      "projectPath": "C:\\Repos\\Dicti\\Dicti.Data\\Dicti.Data.csproj",
-      "packagesPath": "C:\\Users\\MartyMarian\\.nuget\\packages\\",
-      "outputPath": "C:\\Repos\\Dicti\\Dicti.Data\\obj\\",
+      "projectPath": "C:\\Users\\Martinsita\\Desktop\\dicti\\Dicti.Data\\Dicti.Data.csproj",
+      "packagesPath": "C:\\Users\\Martinsita\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Martinsita\\Desktop\\dicti\\Dicti.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\MartyMarian\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Martinsita\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

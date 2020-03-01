@@ -21,11 +21,12 @@ namespace Dicti.Web.Controllers
             try
             {
                 var context = new DictiDBContext();
+                translation.CreatedOn = DateTime.UtcNow;
                 context.Translations.Add(translation);
                 context.SaveChanges();
                 result.Data = true;
             }
-            catch (Exception)
+            catch (Exception е)
             {
                 result.Data = false;
             }
@@ -173,6 +174,7 @@ namespace Dicti.Web.Controllers
             var translations = context.Translations
                 .Include(x => x.TransalationValues).ThenInclude(v => v.Language)
                 .Where(x => x.IsDeleted.HasValue ? !(bool)x.IsDeleted : true)
+                .OrderByDescending(x => x.CreatedOn)
                 .ToList();
 
             return new DictiResponse<ICollection<Translations>>()

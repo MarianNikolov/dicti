@@ -1,4 +1,9 @@
 /* Provide sufficient contrast against white background */
+
+body{
+  background: purple;
+  color: white;
+}
 a {
   color: #0366d6;
 }
@@ -11,4 +16,29 @@ code {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+}
+
+.save-trn-container{
+  display: flex;
+}
+
+.save-trn-error{
+  color: red;
+}
+
+.save-trn-success{
+  color: green;
+}
+
+.save-trn-dash{
+  margin: 0 10px;
+}
+
+.save-trn-button{
+  margin-left: 10px;
+}
+
+.save-trn-lang-column{
+  display: flex;
+  flex-direction: column;
 }
